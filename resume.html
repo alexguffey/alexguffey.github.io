@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Guffey - Resume Layouts</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#3C55E7',
+                        'background': '#E6E8EA',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            width: 850px;
+            height: 1100px;
+            margin: 0 auto 60px;
+            background: white;
+            position: relative;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .eyebrow {
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LAYOUT 1: Split Column with Large Name -->
+    <div class="resume-container">
+        <!-- Left Column - Header -->
+        <div class="absolute top-0 left-0 w-[300px] h-full bg-background border-r-4 border-black p-10">
+            <div class="mb-12">
+                <h1 class="text-6xl font-black leading-[0.88] tracking-tighter mb-6">
+                    Alex<br/>Guffey
+                </h1>
+                <div class="text-sm font-semibold">Sr. UX Designer</div>
+                <div class="text-xs text-gray-600 mt-1">Orlando, FL</div>
+            </div>
+
+            <!-- Skills -->
+            <div class="mb-8">
+                <div class="eyebrow mb-3 pb-2 border-b-2 border-black">Skills</div>
+                <div class="text-xs space-y-2">
+                    <div><span class="font-bold">Design:</span> Figma, Adobe Suite, Sketch</div>
+                    <div><span class="font-bold">Code:</span> React, TypeScript, HTML/CSS</div>
+                    <div><span class="font-bold">Systems:</span> Design Tokens, Component Libraries</div>
+                    <div><span class="font-bold">Methods:</span> User Research, Prototyping, Testing</div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div>
+                <div class="eyebrow mb-3 pb-2 border-b-2 border-black">Education</div>
+                <div class="text-xs space-y-3">
+                    <div>
+                        <div class="font-bold">SCAD</div>
+                        <div class="text-gray-600">MA, Design Management</div>
+                        <div class="text-[10px] text-gray-500">In Progress</div>
+                    </div>
+                    <div>
+                        <div class="font-bold">UCF</div>
+                        <div class="text-gray-600">BA, Digital Media</div>
+                        <div class="text-[10px] text-gray-500">2018</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column - Experience -->
+        <div class="absolute top-0 left-[300px] w-[550px] h-full p-10">
+            <div class="eyebrow mb-6">Experience</div>
+
+            <!-- Experience Item 1 -->
+            <div class="mb-8 pb-6 border-b-2 border-black">
+                <div class="flex justify-between items-baseline mb-2">
+                    <div class="font-bold text-lg">Disney Experiences</div>
+                    <div class="text-xs text-gray-600">2020 – Present</div>
+                </div>
+                <div class="text-sm font-semibold text-gray-700 mb-3">Sr. UX Designer</div>
+                <ul class="text-xs space-y-1.5 list-disc pl-4">
+                    <li>Led design system strategy for 50+ WordPress sites, reducing build time by 70%</li>
+                    <li>Designed and developed React component library used across 15+ applications</li>
+                    <li>Collaborated with engineering to implement design tokens and theming architecture</li>
+                    <li>Conducted user research sessions with internal stakeholders to validate design decisions</li>
+                </ul>
+            </div>
+
+            <!-- Experience Item 2 -->
+            <div class="mb-8 pb-6 border-b-2 border-black">
+                <div class="flex justify-between items-baseline mb-2">
+                    <div class="font-bold text-lg">Previous Company</div>
+                    <div class="text-xs text-gray-600">2018 – 2020</div>
+                </div>
+                <div class="text-sm font-semibold text-gray-700 mb-3">UX Designer</div>
+                <ul class="text-xs space-y-1.5 list-disc pl-4">
+                    <li>Designed user interfaces for web and mobile applications</li>
+                    <li>Created wireframes, prototypes, and high-fidelity mockups</li>
+                    <li>Worked with developers to ensure design implementation quality</li>
+                    <li>Participated in usability testing and design critiques</li>
+                </ul>
+            </div>
+
+            <!-- Experience Item 3 -->
+            <div class="mb-8">
+                <div class="flex justify-between items-baseline mb-2">
+                    <div class="font-bold text-lg">Agency Name</div>
+                    <div class="text-xs text-gray-600">2017 – 2018</div>
+                </div>
+                <div class="text-sm font-semibold text-gray-700 mb-3">Junior Designer</div>
+                <ul class="text-xs space-y-1.5 list-disc pl-4">
+                    <li>Supported senior designers on client projects</li>
+                    <li>Created digital assets and marketing materials</li>
+                    <li>Assisted with user research and testing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- LAYOUT 7: Brutalist Grid Blocks -->
+    <div class="resume-container">
+        <!-- Name Block -->
+        <div class="absolute top-0 left-0 w-[500px] h-[200px] border-r-4 border-b-4 border-black p-8 flex items-center">
+            <h1 class="text-7xl font-black leading-[0.85] tracking-tighter">
+                Alex<br/>Guffey
+            </h1>
+        </div>
+
+        <!-- Title Block -->
+        <div class="absolute top-0 left-[500px] w-[350px] h-[200px] bg-background border-b-4 border-black p-8 flex flex-col justify-center">
+            <div class="text-lg font-bold mb-2">Sr. UX Designer</div>
+            <div class="text-xs">Orlando, FL</div>
+            <div class="text-xs">alex@example.com</div>
+        </div>
+
+        <!-- Skills Block -->
+        <div class="absolute top-[200px] left-0 w-[280px] h-[900px] border-r-2 border-black p-6">
+            <div class="eyebrow mb-4">Skills</div>
+            <div class="text-[10px] space-y-3">
+                <div>
+                    <div class="font-bold mb-1">Design</div>
+                    <div>Figma, Adobe XD, Sketch, Illustrator</div>
+                </div>
+                <div>
+                    <div class="font-bold mb-1">Code</div>
+                    <div>React, TypeScript, HTML/CSS, Git</div>
+                </div>
+                <div>
+                    <div class="font-bold mb-1">Systems</div>
+                    <div>Design Tokens, Components</div>
+                </div>
+                <div>
+                    <div class="font-bold mb-1">Methods</div>
+                    <div>Research, Prototyping, Testing</div>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t-2 border-black">
+                <div class="eyebrow mb-4">Education</div>
+                <div class="text-xs space-y-3">
+                    <div>
+                        <div class="font-bold">SCAD</div>
+                        <div class="text-[10px]">MA, Design Mgmt</div>
+                        <div class="text-[10px] text-gray-600">In Progress</div>
+                    </div>
+                    <div>
+                        <div class="font-bold">UCF</div>
+                        <div class="text-[10px]">BA, Digital Media</div>
+                        <div class="text-[10px] text-gray-600">2018</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Block -->
+        <div class="absolute top-[200px] left-[280px] w-[570px] h-[900px] p-8">
+            <div class="eyebrow mb-6">Experience</div>
+
+            <div class="space-y-5">
+                <div class="pb-4 border-b-2 border-black">
+                    <div class="flex justify-between items-baseline mb-1">
+                        <div class="font-bold text-lg">Disney Experiences</div>
+                        <div class="text-[10px]">2020 – Present</div>
+                    </div>
+                    <div class="text-sm font-semibold mb-2">Sr. UX Designer</div>
+                    <ul class="text-[11px] space-y-1 list-disc pl-4">
+                        <li>Led design system strategy for 50+ WordPress sites, reducing build time by 70%</li>
+                        <li>Designed and developed React component library used across 15+ applications</li>
+                        <li>Collaborated with engineering to implement design tokens and theming</li>
+                        <li>Conducted user research sessions with internal stakeholders</li>
+                        <li>Mentored junior designers and established design review processes</li>
+                    </ul>
+                </div>
+
+                <div class="pb-4 border-b-2 border-black">
+                    <div class="flex justify-between items-baseline mb-1">
+                        <div class="font-bold text-lg">Previous Company</div>
+                        <div class="text-[10px]">2018 – 2020</div>
+                    </div>
+                    <div class="text-sm font-semibold mb-2">UX Designer</div>
+                    <ul class="text-[11px] space-y-1 list-disc pl-4">
+                        <li>Designed user interfaces for web and mobile applications</li>
+                        <li>Created wireframes, prototypes, and high-fidelity mockups</li>
+                        <li>Worked with developers to ensure implementation quality</li>
+                        <li>Participated in usability testing and design critiques</li>
+                    </ul>
+                </div>
+
+                <div class="pb-4 border-b-2 border-black">
+                    <div class="flex justify-between items-baseline mb-1">
+                        <div class="font-bold text-lg">Agency Name</div>
+                        <div class="text-[10px]">2017 – 2018</div>
+                    </div>
+                    <div class="text-sm font-semibold mb-2">Junior Designer</div>
+                    <ul class="text-[11px] space-y-1 list-disc pl-4">
+                        <li>Supported senior designers on client projects</li>
+                        <li>Created digital assets and marketing materials</li>
+                        <li>Assisted with user research and testing</li>
+                    </ul>
+                </div>
+
+                <div class="pb-4 border-b-2 border-black">
+                    <div class="flex justify-between items-baseline mb-1">
+                        <div class="font-bold text-lg">Internship</div>
+                        <div class="text-[10px]">Summer 2017</div>
+                    </div>
+                    <div class="text-sm font-semibold mb-2">Design Intern</div>
+                    <ul class="text-[11px] space-y-1 list-disc pl-4">
+                        <li>Contributed to design projects</li>
+                        <li>Created mockups and prototypes</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="flex justify-between items-baseline mb-1">
+                        <div class="font-bold text-lg">Freelance</div>
+                        <div class="text-[10px]">2016 – 2017</div>
+                    </div>
+                    <div class="text-sm font-semibold mb-2">Graphic Designer</div>
+                    <ul class="text-[11px] space-y-1 list-disc pl-4">
+                        <li>Designed logos and branding for small businesses</li>
+                        <li>Created marketing materials and social media content</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
