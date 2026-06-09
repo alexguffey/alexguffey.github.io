@@ -19,6 +19,7 @@
                     colors: {
                         'primary': '#3C55E7',
                         'background': '#E6E8EA',
+                        'secondary': '#616876',
                     },
                 }
             }
@@ -37,8 +38,9 @@
                 </div>
 
                 <div class="flex gap-6">
-                    <a href="/" class="text-primary font-bold text-sm lowercase tracking-wide py-2 cursor-pointer">← back home</a>
-                    <a href="magic-door" class="text-primary font-bold text-sm lowercase tracking-wide py-2 cursor-pointer">next case →</a>
+                    <div class="flex gap-6">
+                        <a href="magic-door" class="font-bold text-sm lowercase tracking-wide py-2 cursor-pointer">next up: magic door →</a>
+                    </div>
                 </div>
             </div>
 
@@ -50,7 +52,7 @@
     <!-- Header -->
     <div class="flex justify-between items-center">
         <div class="eyebrow">CASE STUDY / 02</div>
-        <div class="text-[12px] text-right text-gray-600">Aloha · The Walt Disney Company</div>
+        <div class="text-[12px] text-right text-secondary">Aloha · The Walt Disney Company</div>
     </div>
 
     <!-- Pull-quote Title -->
@@ -59,13 +61,13 @@
             <div class="display-text text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-0">
                 <span class="marker">Infinite</span> voices.
             </div>
-            <div class="display-text text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-light italic text-gray-500">
+            <div class="display-text text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-light italic text-secondary">
                 one <span class="wavy">ohana</span>.
             </div>
         </div>
         <div class="grow-0 max-w-[500px] lg:pt-8">
-            <div class="eyebrow mb-4">OVERVIEW</div>
-            <p class="text-base md:text-lg leading-relaxed mb-6">
+            <div class="eyebrow mb-2">OVERVIEW</div>
+            <p class="md:text-[18px] mb-6">
                 A multi-site WordPress platform empowering Disney Experiences' communications teams to build brand-aligned websites at scale. No developer required.
             </p>
             <div class="space-y-3">
@@ -110,7 +112,7 @@
 
         <div class="col-span-12 lg:col-span-3 bg-black text-white p-6 flex flex-row lg:flex-col gap-8 justify-between">
             <div class="flex-1 text-right lg:text-left">
-                <div class="text-[48px] font-black leading-none">0 → 50</div>
+                <div class="text-[48px] font-black leading-none">0 to 50</div>
                 <div class="text-[14px] mt-1">Sites in 2 years</div>
             </div>
             <div class="block h-full w-[2px] lg:w-full lg:h-[2px] bg-white"></div>
@@ -120,28 +122,28 @@
             </div>
         </div>
     </div>
-    <div class="w-full grid grid-cols-12 gap-8 border-t-8 border-black p-8 md:p-12 mt-6">
+    <div class="w-full grid grid-cols-12 gap-8 border-t-8 border-black p-4 md:p-12 mt-6">
 
             <div class="col-span-12 md:col-span-2">
                 <div class="eyebrow">02 ·</div>
                 <div class="text-xs mt-2 uppercase tracking-wider">Problem<br>Statement</div>
             </div>
             <div class="col-span-12 md:col-span-10">
-                <p class="text-2xl md:text-3xl font-light">
-                    "Previously, all Disney Experience websites were built with custom solutions, creating a spider web of visual styles and technology stacks. Building and maintaining <span class="wavy">websites proved costly</span> and outdated with modern SEO practices."
+                <p class="text-[20px] md:text-[30px] leading-[1.45] font-light">
+                    Previously, all Disney Experience websites were built with custom solutions, creating a spider web of visual styles and technology stacks. Building and maintaining <span class="wavy">websites proved costly</span> and outdated with modern SEO practices.
                 </p>
             </div>
     </div>
 
     <div class="mb-12 md:mb-16">
-        <div class="eyebrow mb-8 flex items-center gap-2 leading-none">
+        <div class="eyebrow mb-8 flex items-center gap-2 px-4 lg:px-0 leading-none">
             03 · Unique Project, Unique Process
             <span class="section-line"></span>
         </div>
 
         <div class="space-y-0">
             <!-- Step 1 -->
-            <div class="grid grid-cols-12 gap-0 border-t-4 border-black">
+            <div class="grid grid-cols-12 gap-0 border-r-4 border-t-4 md:border-r-0 border-black">
                 <div class="col-span-2 md:col-span-1 bg-black text-white flex items-center justify-center">
                     <span class="text-4xl md:text-6xl font-black transform -rotate-90">01</span>
                 </div>
@@ -167,8 +169,8 @@
             </div>
 
 
-            <div class="grid grid-cols-12 gap-0 border-t-4 border-black bg-white">
-                <div class="col-span-12 md:col-span-6 p-6 md:p-10 space-y-4 order-2 md:order-1">
+            <div class="grid grid-cols-12 gap-0 border-x-4 md:border-x-0 border-t-4 border-black bg-white">
+                <div class="col-span-12 md:col-span-6 p-6 md:p-10 space-y-4 order-3 md:order-1">
                     <p class="text-sm md:text-base leading-relaxed">
                         Rather than starting with the technical solution, I started with the people responsible for publishing content. I conducted stakeholder interviews across communications teams to understand where existing platforms were slowing them down and where opportunities existed to improve workflows.
 
@@ -181,7 +183,7 @@
                         This research led to a scalable content taxonomy that could support multiple teams, content types, and publishing goals while creating a clearer information architecture across the ecosystem.
                     </p>
                 </div>
-                <div class="col-span-10 md:col-span-5 p-6 md:p-10 border-l-4 border-t-4 md:border-t-0 border-black order-1 md:order-2">
+                <div class="col-span-10 md:col-span-5 p-6 md:p-10 md:border-l-4 border-b-4 md:border-b-0 md:border-t-0 border-black order-1 md:order-2">
                     <div class="display-text text-4xl md:text-5xl lg:text-6xl mb-2 leading-[0.95]">
                         User
                     </div>
@@ -189,17 +191,17 @@
                         <span class="marker">Research</span>
                     </div>
                 </div>
-                <div class="col-span-2 md:col-span-1 bg-black text-white flex items-center justify-center border-l-4 border-t-4 md:border-t-0 border-black order-3">
+                <div class="col-span-2 md:col-span-1 bg-black text-white flex items-center justify-center border-l-4 border-t-4 md:border-t-0 border-black order-2 md:order-3">
                     <span class="text-4xl md:text-6xl font-black transform -rotate-90">02</span>
                 </div>
             </div>
 
 
-            <div class="grid grid-cols-12 gap-0 border-t-4 border-b-4 border-black">
-                <div class="col-span-2 md:col-span-1 bg-background flex items-center justify-center bg-black text-white border-r-4 border-black">
+            <div class="grid grid-cols-12 gap-0 border-t-4 border-r-4 md:border-r-0 border-black">
+                <div class="col-span-2 md:col-span-1 bg-black text-white flex items-center justify-center">
                     <span class="text-4xl md:text-6xl font-black transform -rotate-90">03</span>
                 </div>
-                <div class="col-span-10 md:col-span-5 p-6 md:p-10">
+                <div class="col-span-10 md:col-span-5 bg-background p-6 md:p-10 border-l-4 border-black">
                     <div class="display-text text-4xl md:text-5xl lg:text-6xl mb-2 leading-[0.95]">
                         Testing
                     </div>
@@ -221,8 +223,8 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-12 gap-0 border-t-4 border-black bg-white">
-                <div class="col-span-12 md:col-span-6 p-6 md:p-10 space-y-4 order-2 md:order-1">
+            <div class="grid grid-cols-12 gap-0 border-b-4 border-x-4 border-t-4 md:border-x-0 border-black bg-white">
+                <div class="col-span-12 md:col-span-6 p-6 md:p-10 space-y-4 order-3 md:order-1">
                     <p class="text-sm md:text-base leading-relaxed">
                         A recurring pattern emerged across Disney's digital products: new experiences were often designed independently of one another, with little consideration for what had come before. This project presented an opportunity to establish a more unified visual language across the organization.
                     </p>
@@ -233,7 +235,7 @@
                         The goal wasn't uniformity. It was coherence.
                     </p>
                 </div>
-                <div class="col-span-10 md:col-span-5 p-6 md:p-10 border-l-4 border-t-4 md:border-t-0 border-black order-1 md:order-2">
+                <div class="col-span-10 md:col-span-5 p-6 md:p-10 md:border-l-4 border-b-4 md:border-b-0 md:border-t-0 border-black order-1 md:order-2">
                     <div class="display-text text-4xl md:text-5xl lg:text-6xl mb-2 leading-[0.95]">
                         Design Token
                     </div>
@@ -241,7 +243,7 @@
                         <span class="marker">Mapping</span>
                     </div>
                 </div>
-                <div class="col-span-2 md:col-span-1 bg-black text-white flex items-center justify-center border-l-4 border-t-4 md:border-t-0 border-black order-3">
+                <div class="col-span-2 md:col-span-1 bg-black text-white flex items-center justify-center border-l-4 border-t-4 md:border-t-0 border-black order-2 md:order-3">
                     <span class="text-4xl md:text-6xl font-black transform -rotate-90">04</span>
                 </div>
             </div>
@@ -254,7 +256,7 @@
         </div>
 
         <!-- Large Title Block -->
-        <div class="bg-background border-y-8 border-black -mx-4 md:-mx-8 px-4 md:px-8 py-12 md:py-16 relative overflow-hidden">
+        <div class="border-t-8 border-black lg:-mx-8 px-4 lg:px-8 py-12 lg:py-16 relative overflow-hidden">
             <div class="absolute top-0 right-0 text-[250px] md:text-[400px] font-black leading-none text-black/5 -mt-20">04</div>
             <div class="max-w-4xl relative z-10">
                 <div class="display-text text-5xl md:text-6xl lg:text-7xl leading-[0.9] mb-8">
@@ -298,16 +300,16 @@
                 <div class="display-text text-4xl md:text-5xl lg:text-6xl mb-2 leading-[0.95]">
                     One System, Many&nbsp;Audiences
                 </div>
-                <p class="text-sm md:text-lg leading-relaxed">
+                <p class="md:text-lg leading-relaxed">
                     While the platform shared a common foundation, every site still needed to serve a distinct audience. I created flexible design guardrails that maintained accessibility, consistency, and brand standards while allowing each team to express its unique purpose. Consumer-facing sites could leverage richer visuals, bolder colors, and creative assets, while corporate and press-focused properties maintained a more professional and restrained presentation.
                 </p>
-                <p class="text-sm md:text-lg leading-relaxed">
+                <p class="md:text-lg leading-relaxed">
                     This balance allowed audiences to immediately understand what type of content they were engaging with while ensuring every experience still felt unmistakably Disney.
                 </p>
             </div>
         </div>
 
-        <div class="grid grid-cols-12 gap-6">
+        <div class="grid grid-cols-12 gap-6 px-6 md:px-0">
             <div class="col-span-12 md:col-span-7 border-4 border-black bg-white">
                 <div class="border-b-4 border-black bg-white p-4 flex items-center gap-3">
                     <div class="flex gap-2">
@@ -336,7 +338,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-12 gap-6 mt-6">
+        <div class="grid grid-cols-12 gap-6 mt-6 px-6 md:px-0">
             <div class="col-span-12 md:col-span-7 border-4 border-black bg-white">
                 <div class="border-b-4 border-black bg-white p-4 flex items-center gap-3">
                     <div class="flex gap-2">
@@ -389,20 +391,18 @@
 
     </section>
 
-    <section class="bg-black text-white -mx-4 md:-mx-8 px-4 md:px-8 py-12 md:py-16">
-        <div class="max-w-5xl">
-            <div class="eyebrow mb-6 text-white/60">05 · Reflection</div>
-            <blockquote class="text-[30px] md:text-[36px] lg:text-[36px] leading-[1.2] font-light">
+    <section class="grid grid-cols-1 md:grid-cols-12">
+        <div class="col-span-1 md:col-span-11 bg-black text-white px-4 md:px-8 py-12 md:py-16">
+            <div class="eyebrow mb-6 text-white/80">05 · Reflection</div>
+            <p class="text-[24px] md:text-[36px] font-light">
                 Aloha forever changed the way we thought about our web platforms. The company-wide impact has been immense, occasionally overwhelming. Putting those who maintained and published on our platforms at the forefront is what brought the project success. By prioritzing their needs, putting up guardrails when necessary, and empowering them, we created a suite of sites that are as functional as they are beautiful, and loved by the teams who use it.
-            </blockquote>
+            </p>
         </div>
     </section>
 
     <!-- Pagination -->
-    <div class="border-t-2 border-black pt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="md:text-right">
-            <a href="magic-door" class="eyebrow mb-2">NEXT CASE →</a>
-        </div>
+    <div class="border-t-2 border-black pt-5 pb-10 w-full text-right gap-6 px-4">
+        <a href="magic-door" class="eyebrow mb-2">READ NEXT CASE: MAGIC DOOR →</a>
     </div>
 
 </div>
